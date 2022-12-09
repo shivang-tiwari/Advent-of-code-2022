@@ -10,7 +10,6 @@ vector<int> dy = {0,0,1,-1};
 struct knot{
 	int x;
 	int y;
-	pair<int,int> last;
 	
 	knot(int _x,int _y){
 		x = _x;
@@ -26,7 +25,6 @@ struct knot{
 		y = 0;
 	}
 	void move(string s){
-		last = {x,y};
 		for(int k = 0; k < 4; k++){
 			if(dir[k] == s[0]){
 				x += dx[k];
@@ -45,7 +43,6 @@ struct knot{
 			yy = red(yy);
 		}
 		x += xx; y += yy;
-		last = {x-xx,y-yy};
 	}
 	private:
 	int red(int z){
