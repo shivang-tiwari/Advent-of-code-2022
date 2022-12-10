@@ -62,7 +62,7 @@ int main(){
 	#ifdef shivang_ka_laptop
 		freopen("in.txt" , "r", stdin);
 	#endif
-	vector<knot> rope(N,knot(15,11));
+	vector<knot> rope(N);
 	string s;
 	set<pair<int,int>> all;
 	while(cin >> s){
