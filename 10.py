@@ -6,7 +6,7 @@ ans = 0
 cyc = 0
 x = 1
 
-bord = [['.'] * width for i in range(height)]
+bord = [[' '] * width for i in range(height)]
 
 i = 0
 j = 0
@@ -22,7 +22,7 @@ def check():
 	global j
 	
 	if abs(x-j) <= 1:
-		bord[i][j] = '#'
+		bord[i][j] = '█'
 	
 	j += 1
 	if j == width:
