@@ -38,8 +38,6 @@ items = []
 
 with open("in.txt") as fp:
 	Lines = fp.readlines()
-	a = None
-	b = None
 	for line in Lines:
 		l = line.strip()
 		if len(l) == 0:
